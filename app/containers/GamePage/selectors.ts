@@ -3,10 +3,10 @@ import { ApplicationRootState } from 'types';
 import { initialState } from './reducer';
 
 /**
- * Direct selector to the game state domain
+ * Direct selector to the gamePage state domain
  */
 
-const selectGameDomain = (state: ApplicationRootState) => {
+const selectGamePageDomain = (state: ApplicationRootState) => {
   return state || initialState;
 };
 
@@ -15,16 +15,16 @@ const selectGameDomain = (state: ApplicationRootState) => {
  */
 
 /**
- * Default selector used by Game
+ * Default selector used by GamePage
  */
 
-const makeSelectGame = () =>
+const makeSelectGamePage = () =>
   createSelector(
-    selectGameDomain,
+    selectGamePageDomain,
     substate => {
       return substate;
     },
   );
 
-export default makeSelectGame;
-export { selectGameDomain };
+export default makeSelectGamePage;
+export { selectGamePageDomain };

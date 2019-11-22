@@ -1,8 +1,8 @@
-import landingReducer from '../reducer';
+import gamePageReducer from '../reducer';
 // import { someAction } from '../actions';
 import { ContainerState } from '../types';
 
-describe('landingReducer', () => {
+describe('gamePageReducer', () => {
   let state: ContainerState;
   beforeEach(() => {
     state = {
@@ -12,7 +12,7 @@ describe('landingReducer', () => {
 
   it('returns the initial state', () => {
     const expectedResult = state;
-    expect(landingReducer(undefined, {} as any)).toEqual(expectedResult);
+    expect(gamePageReducer(undefined, {} as any)).toEqual(expectedResult);
   });
 
   /**

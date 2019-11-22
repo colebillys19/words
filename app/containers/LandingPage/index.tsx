@@ -1,6 +1,6 @@
 /*
  *
- * Game
+ * LandingPage
  *
  */
 
@@ -10,23 +10,24 @@ import React, { memo } from 'react';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
-// import makeSelectGame from './selectors';
+// import makeSelectLandingPage from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 
 // const stateSelector = createStructuredSelector({
-//   game: makeSelectGame(),
+  // landingPage: makeSelectLandingPage(),
 // });
 
 interface Props {}
 
-function Game(props: Props) {
-  useInjectReducer({ key: 'game', reducer: reducer });
-  useInjectSaga({ key: 'game', saga: saga });
+function LandingPage(props: Props) {
+  // Warning: Add your key to RootState in types/index.d.ts file
+  useInjectReducer({ key: 'landingPage', reducer: reducer });
+  useInjectSaga({ key: 'landingPage', saga: saga });
 
-  // const { game } = useSelector(stateSelector);
+  // const { landingPage } = useSelector(stateSelector);
   // const dispatch = useDispatch();
-  return <div>Game</div>;
+  return <div>Landing Page</div>;
 }
 
-export default memo(Game);
+export default memo(LandingPage);

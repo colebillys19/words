@@ -3,16 +3,16 @@ import * as actions from './actions';
 import { ApplicationRootState } from 'types';
 
 /* --- STATE --- */
-interface LandingState {
+interface LandingPageState {
   readonly default: any;
 }
 
 /* --- ACTIONS --- */
-type LandingActions = ActionType<typeof actions>;
+type LandingPageActions = ActionType<typeof actions>;
 
 /* --- EXPORTS --- */
 type RootState = ApplicationRootState;
-type ContainerState = LandingState;
-type ContainerActions = LandingActions;
+type ContainerState = LandingPageState;
+type ContainerActions = LandingPageActions;
 
 export { RootState, ContainerState, ContainerActions };

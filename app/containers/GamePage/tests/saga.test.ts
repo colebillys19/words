@@ -3,11 +3,11 @@
  */
 
 // import { take, call, put, select } from 'redux-saga/effects';
-// import landingSaga from '../saga';
+// import gamePageSaga from '../saga';
 
-// const generator = landingSaga();
+// const generator = gamePageSaga();
 
-describe('landingSaga Saga', () => {
+describe('gamePageSaga Saga', () => {
   it('Expect to have unit tests specified', () => {
     expect(true).toEqual(false);
   });

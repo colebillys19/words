@@ -1,6 +1,6 @@
 /*
  *
- * Landing reducer
+ * GamePage reducer
  *
  */
 
@@ -11,7 +11,7 @@ export const initialState: ContainerState = {
   default: null,
 };
 
-function landingReducer(
+function gamePageReducer(
   state: ContainerState = initialState,
   action: ContainerActions,
 ): ContainerState {
@@ -23,4 +23,4 @@ function landingReducer(
   }
 }
 
-export default landingReducer;
+export default gamePageReducer;
